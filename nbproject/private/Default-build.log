@@ -1,0 +1,56 @@
+Creating directories for the object files
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/RecycleBin.o src/utils/RecycleBin.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/Serializator.o src/utils/Serializator.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/RateMonitor.o src/utils/RateMonitor.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/IPUtils.o src/utils/IPUtils.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/SDL_barrier.o src/utils/SDL_barrier.cpp
+In file included from src/utils/SDL_barrier.cpp:19:0:
+src/utils/SDL_barrier.h:32:1: warning: ‘typedef’ was ignored in this declaration
+ };
+ ^
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/utils/Configurator.o src/utils/Configurator.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/OglWorld.o src/graphics/OglWorld.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/vrml/ObiectVRML.o src/graphics/vrml/ObiectVRML.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/vrml/ScenaVRML.o src/graphics/vrml/ScenaVRML.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/3ds/Model_3DS.o src/graphics/3ds/Model_3DS.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/3ds/GLTexture.o src/graphics/3ds/GLTexture.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/texture/texture.o src/graphics/texture/texture.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/graphics/font/BitmapFont.o src/graphics/font/BitmapFont.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/game/Region.o src/game/Region.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/game/Quest.o src/game/Quest.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/game/Player.o src/game/Player.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/game/GameObject.o src/game/GameObject.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/Message.o src/comm/Message.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/MessageOkJoin.o src/comm/MessageOkJoin.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/MessageModule.o src/comm/MessageModule.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/MessageWithSerializator.o src/comm/MessageWithSerializator.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/MessageQueue.o src/comm/MessageQueue.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/comm/MessageXY.o src/comm/MessageXY.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/ClientActionModule.o src/client/ClientActionModule.cpp
+src/client/ClientActionModule.cpp: In member function ‘void ClientActionModule::handle_REGULAR_UPDATE(Message*)’:
+src/client/ClientActionModule.cpp:385:52: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   if( client_data->map[xp][yp].type == CELL_OBJECT && cell_type == CELL_PLAYER ||
+                                                    ^
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/Client.o src/client/Client.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/ClientRenderModule.o src/client/ClientRenderModule.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/PlayerAI.o src/client/PlayerAI.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/AStar/NodeSet.o src/client/AStar/NodeSet.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/AStar/MinHeap.o src/client/AStar/MinHeap.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/AStar/AStar.o src/client/AStar/AStar.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/client/AStar/PointStack.o src/client/AStar/PointStack.cpp
+g++ `sdl-config --libs` -lSDL_net -lm -lGL -lGLU -o client build/utils/RecycleBin.o build/utils/Serializator.o build/utils/RateMonitor.o build/utils/IPUtils.o build/utils/SDL_barrier.o build/utils/Configurator.o build/graphics/OglWorld.o build/graphics/vrml/ObiectVRML.o build/graphics/vrml/ScenaVRML.o build/graphics/3ds/Model_3DS.o build/graphics/3ds/GLTexture.o build/graphics/texture/texture.o build/graphics/font/BitmapFont.o build/game/Region.o build/game/Quest.o build/game/Player.o build/game/GameObject.o build/comm/Message.o build/comm/MessageOkJoin.o build/comm/MessageModule.o build/comm/MessageWithSerializator.o build/comm/MessageQueue.o build/comm/MessageXY.o build/client/ClientActionModule.o build/client/Client.o build/client/ClientRenderModule.o build/client/PlayerAI.o build/client/AStar/NodeSet.o build/client/AStar/MinHeap.o build/client/AStar/AStar.o build/client/AStar/PointStack.o 
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/server/Server.o src/server/Server.cpp
+In file included from src/server/Server.cpp:21:0:
+src/server/../utils/SDL_barrier.h:32:1: warning: ‘typedef’ was ignored in this declaration
+ };
+ ^
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/server/WorldUpdateModule.o src/server/WorldUpdateModule.cpp
+In file included from src/server/WorldUpdateModule.h:23:0,
+                 from src/server/WorldUpdateModule.cpp:20:
+src/server/../utils/SDL_barrier.h:32:1: warning: ‘typedef’ was ignored in this declaration
+ };
+ ^
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/server/WorldMap.o src/server/WorldMap.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/server/PlayerBucket.o src/server/PlayerBucket.cpp
+g++ -c `sdl-config --cflags` -I./src -Wall -g -o build/server/ServerData.o src/server/ServerData.cpp
+g++ `sdl-config --libs` -lSDL_net -lm -o server build/utils/RecycleBin.o build/utils/Serializator.o build/utils/RateMonitor.o build/utils/IPUtils.o build/utils/SDL_barrier.o build/utils/Configurator.o build/game/Region.o build/game/Quest.o build/game/Player.o build/game/GameObject.o build/comm/Message.o build/comm/MessageOkJoin.o build/comm/MessageModule.o build/comm/MessageWithSerializator.o build/comm/MessageQueue.o build/comm/MessageXY.o build/server/Server.o build/server/WorldUpdateModule.o build/server/WorldMap.o build/server/PlayerBucket.o build/server/ServerData.o 

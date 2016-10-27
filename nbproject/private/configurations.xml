@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="client">
+          <df name="AStar">
+          </df>
+        </df>
+        <df name="comm">
+        </df>
+        <df name="game">
+        </df>
+        <df name="graphics">
+          <df name="3ds">
+          </df>
+          <df name="font">
+          </df>
+          <df name="texture">
+          </df>
+          <df name="vrml">
+          </df>
+        </df>
+        <df name="master">
+        </df>
+        <df name="server">
+        </df>
+        <df name="utils">
+        </df>
+      </df>
+      <df name="data">
+      </df>
+      <df name="src">
+        <df name="client">
+          <df name="AStar">
+            <in>AStar.cpp</in>
+            <in>AStar.h</in>
+            <in>MinHeap.cpp</in>
+            <in>MinHeap.h</in>
+            <in>Node.h</in>
+            <in>NodeSet.cpp</in>
+            <in>NodeSet.h</in>
+            <in>PointStack.cpp</in>
+            <in>PointStack.h</in>
+          </df>
+          <in>Client.cpp</in>
+          <in>Client.h</in>
+          <in>ClientActionModule.cpp</in>
+          <in>ClientActionModule.h</in>
+          <in>ClientRenderModule.cpp</in>
+          <in>ClientRenderModule.h</in>
+          <in>PlayerAI.cpp</in>
+          <in>PlayerAI.h</in>
+        </df>
+        <df name="comm">
+          <in>Message.cpp</in>
+          <in>Message.h</in>
+          <in>MessageModule.cpp</in>
+          <in>MessageModule.h</in>
+          <in>MessageOkJoin.cpp</in>
+          <in>MessageOkJoin.h</in>
+          <in>MessageQueue.cpp</in>
+          <in>MessageQueue.h</in>
+          <in>MessageWithSerializator.cpp</in>
+          <in>MessageWithSerializator.h</in>
+          <in>MessageXY.cpp</in>
+          <in>MessageXY.h</in>
+        </df>
+        <df name="game">
+          <in>GameObject.cpp</in>
+          <in>GameObject.h</in>
+          <in>Player.cpp</in>
+          <in>Player.h</in>
+          <in>Quest.cpp</in>
+          <in>Quest.h</in>
+          <in>Region.cpp</in>
+          <in>Region.h</in>
+        </df>
+        <df name="gamemonitor">
+          <in>MainWindow.cpp</in>
+          <in>MainWindow.h</in>
+          <in>MessageWithSerializator.cpp</in>
+          <in>MessageWithSerializator.h</in>
+          <in>ParsePacket.cpp</in>
+          <in>ParsePacket.h</in>
+          <in>ReadThread.cpp</in>
+          <in>ReadThread.h</in>
+          <in>RegionWindow.cpp</in>
+          <in>RegionWindow.h</in>
+          <in>SDL_replace.h</in>
+          <in>SliderDialog.cpp</in>
+          <in>SliderDialog.h</in>
+          <in>SlowReader.cpp</in>
+          <in>SlowReader.h</in>
+          <in>Utils.cpp</in>
+          <in>Utils.h</in>
+          <in>help.html.h</in>
+          <in>main.cpp</in>
+        </df>
+        <df name="graphics">
+          <df name="3ds">
+            <in>GLTexture.cpp</in>
+            <in>GLTexture.h</in>
+            <in>Model_3DS.cpp</in>
+            <in>Model_3DS.h</in>
+            <in>Ogl3dsObject.h</in>
+          </df>
+          <df name="font">
+            <in>BitmapFont.cpp</in>
+            <in>BitmapFont.h</in>
+          </df>
+          <df name="texture">
+            <in>texture.cpp</in>
+            <in>texture.h</in>
+          </df>
+          <df name="vrml">
+            <in>ObiectVRML.cpp</in>
+            <in>ObiectVRML.h</in>
+            <in>OglVrmlObject.h</in>
+            <in>ScenaVRML.cpp</in>
+            <in>ScenaVRML.h</in>
+            <in>Util.h</in>
+          </df>
+          <in>Graphics.h</in>
+          <in>OglObject.h</in>
+          <in>OglWorld.cpp</in>
+          <in>OglWorld.h</in>
+        </df>
+        <df name="server">
+          <in>PlayerBucket.cpp</in>
+          <in>PlayerBucket.h</in>
+          <in>Server.cpp</in>
+          <in>ServerData.cpp</in>
+          <in>ServerData.h</in>
+          <in>WorldMap.cpp</in>
+          <in>WorldMap.h</in>
+          <in>WorldUpdateModule.cpp</in>
+          <in>WorldUpdateModule.h</in>
+        </df>
+        <df name="utils">
+          <in>Configurator.cpp</in>
+          <in>Configurator.h</in>
+          <in>Garbage.h</in>
+          <in>IPUtils.cpp</in>
+          <in>IPUtils.h</in>
+          <in>RateMonitor.cpp</in>
+          <in>RateMonitor.h</in>
+          <in>RecycleBin.cpp</in>
+          <in>RecycleBin.h</in>
+          <in>SDL_barrier.cpp</in>
+          <in>SDL_barrier.h</in>
+          <in>Serializator.cpp</in>
+          <in>Serializator.h</in>
+          <in>ThreadSafeQueue.h</in>
+        </df>
+        <in>Constants.h</in>
+        <in>General.h</in>
+        <in>Settings.h</in>
+        <in>Structs.h</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

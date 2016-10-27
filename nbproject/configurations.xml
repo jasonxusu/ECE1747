@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="client">
+          <df name="AStar">
+            <in>AStar.cpp</in>
+            <in>MinHeap.cpp</in>
+            <in>NodeSet.cpp</in>
+            <in>PointStack.cpp</in>
+          </df>
+          <in>Client.cpp</in>
+          <in>ClientActionModule.cpp</in>
+          <in>ClientRenderModule.cpp</in>
+          <in>PlayerAI.cpp</in>
+        </df>
+        <df name="comm">
+          <in>Message.cpp</in>
+          <in>MessageModule.cpp</in>
+          <in>MessageOkJoin.cpp</in>
+          <in>MessageQueue.cpp</in>
+          <in>MessageWithSerializator.cpp</in>
+          <in>MessageXY.cpp</in>
+        </df>
+        <df name="game">
+          <in>GameObject.cpp</in>
+          <in>Player.cpp</in>
+          <in>Quest.cpp</in>
+          <in>Region.cpp</in>
+        </df>
+        <df name="graphics">
+          <df name="3ds">
+            <in>GLTexture.cpp</in>
+            <in>Model_3DS.cpp</in>
+          </df>
+          <df name="font">
+            <in>BitmapFont.cpp</in>
+          </df>
+          <df name="texture">
+            <in>texture.cpp</in>
+          </df>
+          <df name="vrml">
+            <in>ObiectVRML.cpp</in>
+            <in>ScenaVRML.cpp</in>
+          </df>
+          <in>OglWorld.cpp</in>
+        </df>
+        <df name="server">
+          <in>PlayerBucket.cpp</in>
+          <in>Server.cpp</in>
+          <in>ServerData.cpp</in>
+          <in>WorldMap.cpp</in>
+          <in>WorldUpdateModule.cpp</in>
+        </df>
+        <df name="utils">
+          <in>Configurator.cpp</in>
+          <in>IPUtils.cpp</in>
+          <in>RateMonitor.cpp</in>
+          <in>RecycleBin.cpp</in>
+          <in>SDL_barrier.cpp</in>
+          <in>Serializator.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/include/SDL</pElem>
+              <pElem>src</pElem>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>_GNU_SOURCE=1</Elem>
+              <Elem>_REENTRANT</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="src/client/AStar/AStar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/AStar/MinHeap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/AStar/NodeSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/AStar/PointStack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/Client.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/ClientActionModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/ClientRenderModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/client/PlayerAI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comm/Message.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comm/MessageModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comm/MessageOkJoin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comm/MessageQueue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comm/MessageWithSerializator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/comm/MessageXY.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/game/GameObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/game/Player.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/game/Quest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/game/Region.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/3ds/GLTexture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/3ds/Model_3DS.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/OglWorld.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/font/BitmapFont.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/texture/texture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/vrml/ObiectVRML.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/graphics/vrml/ScenaVRML.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/PlayerBucket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/ServerData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/WorldMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/WorldUpdateModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/Configurator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/IPUtils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/RateMonitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/RecycleBin.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/SDL_barrier.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utils/Serializator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
